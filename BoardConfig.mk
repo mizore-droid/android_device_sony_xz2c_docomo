@@ -7,7 +7,7 @@
 # Inherit from tama-common
 -include device/sony/tama-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/sony/xz2c
+DEVICE_PATH := device/sony/xz2c_docomo
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
@@ -16,7 +16,7 @@ TARGET_HW_DISK_ENCRYPTION := true
 TARGET_SCREEN_DENSITY := 480
 
 # Kernel
-TARGET_KERNEL_CONFIG := tama_apollo_defconfig
+TARGET_KERNEL_CONFIG := tama_apollo_docomo_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -29,4 +29,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
--include vendor/sony/xz2c/BoardConfigVendor.mk
+-include vendor/sony/xz2c_docomo/BoardConfigVendor.mk
